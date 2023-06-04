@@ -1,0 +1,453 @@
+
+   *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   }
+
+   #home{
+    background-image: url(../intro-bg.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size:100% 100%;
+    background-attachment:fixed
+   }
+  .layer{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.fixed{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    z-index: 99 ;
+}
+.nv-color{
+    color: whitesmoke;
+}
+
+.layer .con-info{
+    color: white;
+    text-align: center;
+
+}
+.layer .con-info h1{
+    font-size: 60px;
+}
+.layer .con-info h2{
+    margin: 30px;
+}
+.con-info h2::after{
+    content: " ";
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+/* developer   designer */
+@keyframes typing {
+        0%{
+            content: "de |";
+            
+        }
+        5%{
+            content: "deve|";
+           
+        }
+        10%{
+            content: "develo|";
+        }
+        20%{
+            content: "develop|";
+        }
+        30%{
+            content: " developer|";
+        }
+        40%{
+            content: "de|";
+        }
+        50%{
+            content: "des|";
+        }
+        60%{
+            content: "desi|";
+        }
+        
+        70%{
+            content: "desig|";
+   
+        }
+        80%{
+            content: " design|";
+            
+        }
+        90%{
+            content: "designe|";
+           
+        }
+        
+        100%{
+            content: "designer|";
+        }
+    }
+
+
+    /* stert about */
+
+    #about {
+        margin-top: 30px;
+    }
+   .img-person img{
+    width: 100%;
+   }
+  
+   .w-progres1{
+    width: 90%;
+   }
+   .title-about-me{
+    margin-bottom: 40px;
+   }
+   .about-me{
+    position: relative;
+   }
+   .title-about-me::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 5px;
+    top: 53px;
+    left: 30px;
+    background-color:#0078ff ;
+
+   }
+   .p-about{
+    font-size: 1.25rem;
+    font-weight: 300;
+   }
+   /* end about */
+
+
+   /* start SERVICES */
+ #SERVICES{
+    margin-top: 40px;
+ }
+ .box,.box3,.box4{
+    width: 80%;
+    margin: auto;
+ }
+.title-SERVICES ,.title-portfolio{
+    text-align: center;
+    position: relative;
+}
+.title-SERVICES h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.title-SERVICES p{
+    font-size: 20px;
+}
+.title-SERVICES::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 5px;
+    top: 109px;
+    left: 445px;
+    background-color:#0078ff ;
+}
+.icon-services{
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 3;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    display: block;
+    transition-duration:1s ;
+}
+.box-services{
+    border-radius: 10%;
+    padding: 15px;
+    margin-top: 15px;
+}
+.content-services h2{
+    font-size: 30px;
+}
+
+.box-services:hover .icon-services{
+    box-shadow: 0 0 0 10px #a4c6ec;
+}
+.box-services:hover .icon-services {
+    background-color: #0078ff;
+    color: white;
+}
+
+.photo{
+    background-image: url(../counters-bg.jpg);
+    height:50vh;
+    background-position: center center;
+    background-size:100% 100%;
+    position: relative;
+}
+.overly-layer{
+    background-color: rgb(0, 119, 255);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+
+}
+.box-services2{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.ico-services2{
+    width: 100px;
+    height: 100px;
+    border: 10px  solid #eaedf1;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+    border-radius: 50%;
+    line-height: 86.5px;
+}
+
+
+.title-portfolio h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.title-portfolio::after{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 5px;
+    top: 109px;
+    left: 566px;
+    background-color:#0078ff ;
+}
+.box-portfolio{
+    text-align: center;
+    overflow: hidden;
+}
+
+.box-portfolio img{
+    width: 100%;
+    transition:1s all ;
+}
+.mark-p{
+    color: #0078ff;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.content-word{
+    margin-top: 30px;
+}
+.content-word h3{
+    font-size: 20px;
+}
+.content-word .spen-color{
+    color:#0078ff;
+}
+.box-portfolio:hover img{
+    transform: scale(1.2);
+}
+.carosel{
+    background-image: url(../overlay-bg.jpg);
+    height:60vh;
+    background-position: center center;
+    background-size:100% 100%;
+}
+
+.quote{
+    font-size: 30px;
+    color: #0078ff;
+    background-color: #fff;
+    width: 52px;
+    height: 52px;
+    display: block;
+    margin:auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    
+}
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    left: 0;
+}
+
+/* start blog */
+.title-blog{
+    position: relative;
+}
+.title-blog h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.title-blog::after{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 5px;
+    top: 109px;
+    left: 549px;
+    background-color:#0078ff ;
+}
+.box4{
+
+}
+.box-blog{
+    position: relative;
+}
+.box-blog::after{
+    content: "wab design";
+    background-color: #0078ff;
+    color: white;
+    position: absolute;
+    top: 205px;
+    left: 126px;
+    padding: 5px;
+    border-radius: 15%;
+}
+
+
+.box-blog img{
+    width: 100%;
+}
+.content-blog h3{
+    font-size: 20px;
+    transition: 1s all;
+}
+.mini-title h6:hover{
+    color: #0078ff;
+}
+.content-blog h3:hover{
+    color: #0078ff;
+}
+
+.mini-img{
+
+}
+.mini-img img{
+    border-radius: 50%;
+}
+
+
+/* end blog */
+
+#content{
+    background-image: url(../images-dev/overlay-bg.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center center;
+    margin-top: 60px;
+}
+.title-box{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.title-box::after{
+    content: "";
+    position: absolute;
+    width: 168px;
+    height: 5px;
+    top: 53px;
+    left: 21px;
+    background-color:#0078ff ;
+}
+.title-left{
+    margin-top: 10px;
+    position:relative;
+}
+.title-left::after{
+    content: "";
+    position: absolute;
+    width: 168px;
+    height: 5px;
+    top: 53px;
+    left: 21px;
+    background-color:#0078ff ;
+}
+
+
+.in-but{
+    margin-bottom:35px ;
+}
+.button-button-a{
+    padding: 15px 25px;
+    margin: 15px;
+    color: whitesmoke;
+    background-color: #0078ff;
+    font-size: 20px;
+    border-radius: 5rem;
+    border-color: #fff;
+}
+.more-info p {
+    margin-top: 30px;
+    font-size: 23px;
+}
+.icon-list{
+    margin-top: 15px;
+    list-style: none;
+    line-height: 2.5;
+ }
+ .icon-list i{
+    color: #0078ff;
+ }
+ 
+.costial {
+    list-style: none;
+    margin-top: 30px;
+    
+}
+.costial ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.costial .span-boorder{
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border:5px solid #0078ff;
+    border-radius: 50%;
+    line-height: 1.4;
+    transition: 1s all;
+}
+.span-boorder i{
+    padding-left: 6px;
+}
+.span-boorder:hover{
+    border-color: #a4c6ec;
+    background-color: #0078ff;
+    color: #fff;
+}
+.content{
+    margin-top: 50px;
+}
+.copy-right{
+    margin: 30px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.active { 
+    color: #0078ff;
+}
